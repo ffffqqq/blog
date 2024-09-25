@@ -289,8 +289,8 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: 我的GitHub
+      link: https://github.com/ffffqqq
   card_announcement:
     enable: true
     content: This is my Blog

@@ -68,7 +68,7 @@ avatar:
 
 # Disable all banner images
 #可选：颜色（HEX RGB） | transparent 透明 | img链接 | false 不显示
-disable_top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
+disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
 default_top_img:

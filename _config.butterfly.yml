@@ -17,10 +17,16 @@ nav:
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  清单||fa fa-heartbeat:
+    音乐: /music/ || fas fa-music
+    照片: /Gallery/ || fas fa-images
+    电影: /movies/ || fas fa-video
+  友情链接: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
 
 # --------------------------------------
 # Code Blocks Settings
@@ -28,10 +34,10 @@ menu:
 
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
-  theme: light
+  theme: ocean
   macStyle: false
-  # Code block height limit (unit: px)
-  height_limit: false
+  # Code block height limit (unit: px) / false 
+  height_limit: 300
   word_wrap: false
 
   # Toolbar
@@ -44,6 +50,7 @@ code_blocks:
 # Social media links
 # Formal:
 #   icon: link || the description || color
+#	url || 描述性文字 || color
 social:
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
@@ -54,12 +61,14 @@ social:
 
 favicon: /img/favicon.png
 
+#头像 如果将effect设置为true头像会一直转圈
 avatar:
   img: /img/butterfly-icon.png
   effect: false
 
 # Disable all banner images
-disable_top_img: false
+#可选：颜色（HEX RGB） | transparent 透明 | img链接 | false 不显示
+disable_top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 
 # If the banner of page not setting, it will show the default_top_img
 default_top_img:
@@ -98,9 +107,12 @@ cover:
   index_enable: true
   aside_enable: true
   archives_enable: true
+  # 可选：left | right | both 以选择文章封面显示方位
+  #position: 
   # When cover is not set, the default cover is displayed
   default_cover:
     # - xxx.jpg
+    #可以配置多张图片，会速记选择一张作为封面
 
 # Replace Broken Images
 error_img:
@@ -116,18 +128,16 @@ error_404:
 post_meta:
   # Home Page
   page:
-    # Choose: created / updated / both
-    date_type: created
-    # Choose: date / relative
-    date_format: date
-    categories: true
-    tags: false
-    label: true
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_format: relative # date/relative 顯示日期還是相對日期
+    categories: true # true or false 主頁是否顯示分類
+    tags: true # true or false 主頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
   post:
     # Choose: left / center
     position: left
     # Choose: created / updated / both
-    date_type: both
+    date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     # Choose: date / relative
     date_format: date
     categories: true
@@ -188,15 +198,16 @@ index_post_content:
 # Post Settings
 # --------------------------------------
 
+#文章目录
 toc:
-  post: true
-  page: false
-  number: true
-  expand: false
-  # Only for post
-  style_simple: false
+  post: true # 文章页是否显示 TOC
+  page: false # 普通页面是否显示 TOC
+  number: true	 # 是否显示章节数
+  expand: false	# 是否展开 TOC
+  style_simple: false # for post 简洁模式（侧边栏只显示 TOC, 只对文章页有效 ）
   scroll_percent: true
 
+#文章协议与版权：复制文章内容时是否附带文章链接等信息
 post_copyright:
   enable: true
   decode: false
@@ -204,6 +215,7 @@ post_copyright:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
+#文章打赏
 # Sponsor/reward
 reward:
   enable: false
@@ -224,31 +236,25 @@ post_edit:
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   url:
 
+#相关文章推荐
 # Related Articles
 related_post:
   enable: true
-  # Number of posts displayed
-  limit: 6
-  # Choose: created / updated
-  date_type: created
+  limit: 6 # 显示推荐文章数目
+  date_type: created # or created or updated 文章日期显示创建日或者更新日
 
-# Choose: 1 / 2 / false
-# 1: The 'next post' will link to old post
-# 2: The 'next post' will link to new post
-# false: disable pagination
-post_pagination: 1
+# post_pagination (文章分页与按钮)
+# value: 1 || 2 || false	# false:为关闭分页按钮；1:下一篇显示的是旧文章；2:下一篇显示的是新文章
+post_pagination: 2
 
-# Displays outdated notice for a post
+# Displays outdated notice for a post (文章过期提醒)
 noticeOutdate:
-  enable: false
-  # Style: simple / flat
-  style: flat
-  # When will it be shown
-  limit_day: 365
-  # Position: top / bottom
-  position: top
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  enable: true
+  style: flat # style: simple/flat
+  limit_day: 365 # 距离更新时间多少天才显示文章过期提醒
+  position: top # position: top/bottom
+  message_prev: It has been # 天数之前的文字
+  message_next: days since the last update, the content of the article may be outdated. # 天数之后的文字
 
 # --------------------------------------
 # Footer Settings
@@ -256,15 +262,15 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2019
-  custom_text:
-  # Copyright of theme and framework
-  copyright: true
+    since: 2023	# 站点起始时间
+  custom_text:	# 是一个给你用来在页脚自定义文本的选项。通常你可以在这里写声明文本等,支持 HTML。
+  copyright: false # Copyright of theme and framework
 
 # --------------------------------------
 # Aside Settings
 # --------------------------------------
 
+#侧边栏设置
 aside:
   enable: true
   hide: false
@@ -430,9 +436,9 @@ wordcount:
 
 # Busuanzi count for PV / UV in site
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: true  # 本站总访客数
+  site_pv: true  # 本站总访问量 
+  page_pv: true  # 本文总阅读量
 
 # --------------------------------------
 # Math

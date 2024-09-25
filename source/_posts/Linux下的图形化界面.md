@@ -2,7 +2,7 @@
 title: Linux下的图形化界面
 date: 2024-09-24 23:08:35
 categories:
--Linux
+  - Linux
 ---
 ## 如何在CentOS Linux中使用图形化界面
 

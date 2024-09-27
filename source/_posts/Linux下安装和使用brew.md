@@ -3,7 +3,7 @@ title: Linux下安装和使用brew
 date: 2024-09-25 05:05:46
 tags:
 categories: 
-  -Linux
+  - Linux
 ---
 ## 下载HomeBrew和使用
 

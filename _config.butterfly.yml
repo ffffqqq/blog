@@ -34,8 +34,8 @@ menu:
 
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
-  theme: ocean
-  macStyle: false
+  theme: darker
+  macStyle: true
   # Code block height limit (unit: px) / false 
   height_limit: 300
   word_wrap: false
@@ -74,7 +74,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img:
+index_img: https://pic-bed1-9nl.pages.dev/imgs/page_imgs/p5r.png
 
 # The banner image of archive page
 archive_img:
@@ -100,7 +100,7 @@ footer_img: false
 
 # Website Background
 # Can set it to color or image url
-background:
+background: https://pic-bed1-9nl.pages.dev/imgs/page_imgs/p5r.png
 
 cover:
   # Disable the cover or not
@@ -108,11 +108,15 @@ cover:
   aside_enable: true
   archives_enable: true
   # 可选：left | right | both 以选择文章封面显示方位
-  #position: 
+  position: both
   # When cover is not set, the default cover is displayed
   default_cover:
+    - https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover4.jpg
+    - https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover1.jpg
+    - https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover2.jpg
+    - https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover3.jpg
     # - xxx.jpg
-    #可以配置多张图片，会速记选择一张作为封面
+    #可以配置多张图片，会随机选择一张作为封面
 
 # Replace Broken Images
 error_img:
@@ -527,7 +531,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use:
+  use: Twikoo
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -615,7 +619,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: https://twikoo.blogfeng.top/
   region:
   # Use Twikoo visitor count as the page view count
   visitor: false

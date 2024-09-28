@@ -6,8 +6,8 @@
 #       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
 #       descr: 快速、簡單且強大的網誌框架
 
-- class_name: 網站
-  class_desc: 值得推薦的網站
+- class_name: 网站
+  class_desc: 值得推荐的网站
   link_list:
     - name: 抖音
       link: https://www.douyin.com/
@@ -21,3 +21,15 @@
       link: https://twitter.com/
       avatar: #图片链接
       descr: 技术交流平台
+
+- class_name: 本博客借鉴学习的博客网站
+  class_desc: 感谢这些博客网站
+  link_list:
+    - name: Fomalhaut🥝的博客
+      link: https://www.fomal.cn/
+      avatar: 
+      descr: 关于Butterfly主题的魔改教程非常全,此外,还允许你自己DIY它的博客页面,非常有趣
+    - name: 百里飞洋的博客
+      link: https://blog.meta-code.top/
+      avatar:
+      descr: 我关于Twikoo的评论系统就是参考他的教程做的

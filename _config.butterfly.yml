@@ -13,11 +13,12 @@ menu:
   时间轴: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  清单||fa fa-heartbeat:
+  列表||fa fa-heartbeat:
     音乐: /music/ || fas fa-music
     图库: /Gallery/ || fas fa-images
     电影: /movies/ || fas fa-video
-    小巧思: /Ideas/ || hide
+    小巧思: /Ideas/ || fas fa-head-side-gear
+  留言: /comments/ || fas fa-envelope-open
   一些链接: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
 
@@ -857,11 +858,14 @@ pjax:
   exclude:
     # - xxxx
     # - xxxx
+    - /music/
+    - /no-pjax/
+    
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
-  per_page: true
+  enable: true
+  per_page: false
 
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
@@ -869,18 +873,18 @@ aplayerInject:
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
   enable: false
-  position: bottom-left
+  position: top-center
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: false
+instantpage: true
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
 pangu:
-  enable: false
+  enable: true
   field: site # site/post
 
 # Lazyload (圖片懶加載)
@@ -1004,3 +1008,5 @@ CDN:
     # valine:
     # waline_css:
     # waline_js:
+
+#自己加入的

@@ -1,6 +1,7 @@
 ---
-title: wallpaper
+title: model
 date: 2024-09-25 22:41:57
+aside: false
 ---
 <!--用gallery标签外挂-->
 {% gallery %}

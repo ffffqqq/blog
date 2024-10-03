@@ -650,7 +650,8 @@ text_align_justify: false
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 #background: url(https://pic-bed1-9nl.pages.dev/imgs/page_imgs/p5r.jpg)
-background: url(https://s2.loli.net/2024/09/30/R7jqWB9VehapSov.jpg)
+#background: url(https://s2.loli.net/2024/09/30/R7jqWB9VehapSov.jpg)
+background: url(https://pic-bed1-9nl.pages.dev/imgs/post_Imags/202410021839469.jpg)
 
 # Footer Background
 footer_bg: false

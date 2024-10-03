@@ -113,7 +113,7 @@ search:
   field: post
   content: true
 
-
+#自己加的
 
 #aplayer音乐播放器
 ## https://github.com/MoePlayer/hexo-tag-aplayer
@@ -147,3 +147,25 @@ live2d:
   mobile:
     show: false # 手机中是否展示
 
+# markdown 渲染引擎配置，默认是hexo-renderer-marked，这个插件渲染速度更快，且有新特性
+##see: https://github.com/hexojs/hexo-renderer-markdown-it
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-footnote
+    - markdown-it-sup
+    - markdown-it-sub
+    - markdown-it-abbr
+    - markdown-it-emoji
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: false
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶

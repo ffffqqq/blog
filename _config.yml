@@ -118,7 +118,7 @@ search:
 #aplayer音乐播放器
 ## https://github.com/MoePlayer/hexo-tag-aplayer
 aplayer:
-  meting: false
+  meting: true # true 开启 metingjs 支持，false 关闭。默认值：false
   asset_inject: false
 
 #看板娘
@@ -164,8 +164,15 @@ markdown:
     - markdown-it-abbr
     - markdown-it-emoji
   anchors:
-    level: 2
+    level: 1
     collisionSuffix: 'v'
     permalink: false
     permalinkClass: header-anchor
     permalinkSymbol: ¶
+  images:
+    lazyload: true
+
+# 首页文章一行显示两个
+## see: https://zfe.space/post/hexo-butterfly-article-double-row.html
+butterfly_article_double_row:
+  enable: true

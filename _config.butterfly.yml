@@ -650,8 +650,8 @@ text_align_justify: false
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 #background: url(https://pic-bed1-9nl.pages.dev/imgs/page_imgs/p5r.jpg)
-#background: url(https://s2.loli.net/2024/09/30/R7jqWB9VehapSov.jpg)
-background: url(https://pic-bed1-9nl.pages.dev/imgs/post_Imags/202410021839469.jpg)
+background: url(https://s2.loli.net/2024/09/30/R7jqWB9VehapSov.jpg)
+#background: url(https://pic-bed1-9nl.pages.dev/imgs/post_Imags/202410021839469.jpg)  月光下的德累斯顿.jpg
 
 # Footer Background
 footer_bg: false
@@ -1037,6 +1037,48 @@ envelope_comment:
     title: 留言板
     comments: true
 
+# 置顶轮播
+# hexo-butterfly-swiper
+# see https://akilar.top/posts/8e1264d1/
+swiper:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  timemode: date #date/updated
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
+# 首页分类磁帖
+# hexo-butterfly-categories-card
+# see https://akilar.top/posts/a9131002/
+categoryBar:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  column: even # odd：3列 | even：4列
+  row: 1 #显示行数，默认两行，超过行数切换为滚动显示
+  message:
+    - descr: Linux
+      cover: /img/categories_Linux.webp
+    - descr: 博客
+      cover: /img/categories_博客.jpg
+    - descr: 分享
+      cover: /img/categories_分享.jpg
+    - descr: Spring
+      cover: /img/categories_Spring.webp
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
+
 # 页脚徽标和运行时间
 # footer_beautify
 # 页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)
@@ -1086,3 +1128,4 @@ footer_beautify:
   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
   swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
+

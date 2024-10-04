@@ -149,28 +149,28 @@ live2d:
 
 # markdown 渲染引擎配置，默认是hexo-renderer-marked，这个插件渲染速度更快，且有新特性
 ##see: https://github.com/hexojs/hexo-renderer-markdown-it
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-footnote
-    - markdown-it-sup
-    - markdown-it-sub
-    - markdown-it-abbr
-    - markdown-it-emoji
-  anchors:
-    level: 1
-    collisionSuffix: 'v'
-    permalink: false
-    permalinkClass: header-anchor
-    permalinkSymbol: ¶
-  images:
-    lazyload: true
+# markdown:
+#   render:
+#     html: true
+#     xhtmlOut: false
+#     breaks: true
+#     linkify: true
+#     typographer: true
+#     quotes: '“”‘’'
+#   plugins:
+#     - markdown-it-footnote
+#     - markdown-it-sup
+#     - markdown-it-sub
+#     - markdown-it-abbr
+#     - markdown-it-emoji
+#   anchors:
+#     level: 1
+#     collisionSuffix: 'v'
+#     permalink: false
+#     permalinkClass: header-anchor
+#     permalinkSymbol: ¶
+#   images:
+#     lazyload: true
 
 # 首页文章一行显示两个
 ## see: https://zfe.space/post/hexo-butterfly-article-double-row.html

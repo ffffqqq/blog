@@ -92,9 +92,10 @@ cover:
   default_cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
     - https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover1.jpg
-    - https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover2.jpg
     - https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover3.jpg
     - https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover4.jpg
+    - https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover5.jpg
+    - https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover1.gif
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -930,9 +931,10 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/background.css"> #主题/source/css文件夹中的background.css文件
   bottom:
   #底部播放器
-    - <div class="aplayer no-destroy" data-id="8907994674" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-autoplay="true"></div>
+    - <div class="aplayer no-destroy" data-id="12372684314" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-autoplay="true"></div>
     # - <script src="xxxx"></script>
 
 # CDN
@@ -1049,7 +1051,7 @@ swiper:
     type: id
     name: recent-posts
     index: 0
-  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  default_descr: 置顶轮播！
   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
   custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁

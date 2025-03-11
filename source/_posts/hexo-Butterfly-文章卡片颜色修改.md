@@ -5,7 +5,7 @@ tags:
   - 博客教学
 categories:
   - 博客
-description: 在hexo butterfly主题下添加自定义格式，并设置文章盒子的颜色
+description: 在hexo butterfly主题下添加自定义格式，并设置文章容器的颜色
 cover: https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover2.jpg
 ---
 
@@ -40,7 +40,7 @@ cover: https://pic-bed1-9nl.pages.dev/imgs/index_imgs/post_cover2.jpg
 
 # 修改格式
 
-以标题的修改文章盒子颜色为例
+以标题的修改文章容器颜色为例
 
 在刚才的_custom文件夹中新增一个css，命名随意，然后向其中添加:
 
@@ -77,7 +77,7 @@ div#category{
 
 rgba(255, 255, 255, 0.9) 前三个表示对应的rgb值，最后一个是调节透明度。
 
-此时也只是配置了默认状态下文章的颜色，但由于显示优先级顺序，自定义的样式会刷新主题原来的配置，当你切换黑夜模式时，会发现你的文章盒子仍然是透明的，没有随着主题变成黑色，像这样：
+此时也只是配置了默认状态下文章的颜色，但由于显示优先级顺序，自定义的样式会刷新主题原来的配置，当你切换黑夜模式时，会发现你的文章容器仍然是透明的，没有随着主题变成黑色，像这样：
 
 ![未配置黑夜模式](https://pic-bed1-9nl.pages.dev/imgs/post_Imags/202410110139853.jpg)
 
@@ -108,7 +108,7 @@ rgba(255, 255, 255, 0.9) 前三个表示对应的rgb值，最后一个是调节�
 }
 ```
 
-现在，切换黑夜模式时，**所有的盒子也会随之变成黑色了**！
+现在，切换黑夜模式时，**所有的容器也会随之变成黑色了**！
 
 ![配置黑夜模式后](https://pic-bed1-9nl.pages.dev/imgs/post_Imags/202410110144967.jpg)
 
